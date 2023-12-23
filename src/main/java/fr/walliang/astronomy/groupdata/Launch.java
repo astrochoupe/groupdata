@@ -131,26 +131,26 @@ public class Launch {
 			writer.newLine();
 
 			for (Line line : binnedData) {
-				writer.write(line.seconds.toString());
+				writer.write(line.seconds().toString());
 				writer.write(",");
 
-				if (!line.r.equals(BigDecimal.ZERO)) {
-					writer.write(line.r.toString());
+				if (!line.r().equals(BigDecimal.ZERO)) {
+					writer.write(line.r().toString());
 				}
 				writer.write(",");
 
-				if (!line.g.equals(BigDecimal.ZERO)) {
-					writer.write(line.g.toString());
+				if (!line.g().equals(BigDecimal.ZERO)) {
+					writer.write(line.g().toString());
 				}
 				writer.write(",");
 
-				if (!line.b.equals(BigDecimal.ZERO)) {
-					writer.write(line.b.toString());
+				if (!line.b().equals(BigDecimal.ZERO)) {
+					writer.write(line.b().toString());
 				}
 				writer.write(",");
 
-				if (!line.ha.equals(BigDecimal.ZERO)) {
-					writer.write(line.ha.toString());
+				if (!line.ha().equals(BigDecimal.ZERO)) {
+					writer.write(line.ha().toString());
 				}
 
 				writer.newLine();
